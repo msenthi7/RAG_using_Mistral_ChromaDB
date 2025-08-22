@@ -13,6 +13,7 @@ It uses **Ollama** to run an LLM on your machine, **Chroma** as a local vector D
   * **Stateful RAG**: We use LangChain’s `RunnableWithMessageHistory` to remember conversation context (follow-ups work).
   * **Intent routing**: Greets naturally, handles small-talk, and gracefully falls back when the query is off-topic.
   * **Readable output**: The LLM is prompted to return **HTML fragments** using paragraphs and bullet points for clear UI rendering.
+  * The local-first system ensures full control over Protected Health Information (PHI), avoids third-party data transmission, and simplifies HIPAA compliance
 
 -----
 
